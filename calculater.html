@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <title>
+            calculater
+        </title>
+        <style>
+            input{
+                width: 80%;height: 50px;
+                border: 5px solid rgb(167, 200, 17);
+               background-color: rgb(238, 165, 165);
+               text-align: center;
+               font-size: 25;
+               border-radius: 10px;
+
+            }
+            #add{
+                width: 100px;height: 50px;
+                border: 3px solid rgb(250, 135, 135); 
+                background-color: black;
+                color: whitesmoke;
+                margin: 8px;
+                border-radius: 10px;
+            }
+            #sub{
+                width: 100px;height: 50px;
+                border: 3px solid rgb(216, 16, 43); 
+                background-color: black;
+                color: whitesmoke;
+                margin: 8px;
+                border-radius: 10px;
+            }
+            #mul{
+                width: 100px;height: 50px;
+                border: 3px solid rgb(236, 83, 11); 
+                background-color: black;
+                color: whitesmoke;
+                margin: 8px;
+                border-radius: 10px;
+            }
+            #div{
+                width: 100px;height: 50px;
+                border: 3px solid rgb(221, 23, 99); 
+                background-color: black;
+                color: whitesmoke;
+                margin: 8px;
+                border-radius: 10px;
+            }
+            #sqr{
+                width: 100px;height: 50px;
+                border: 3px solid rgb(133, 24, 223); 
+                background-color: black;
+                color: whitesmoke;
+                margin: 8px;
+                border-radius: 10px;
+            }
+            #clear{
+                width: 100px;height: 50px;
+                border: 3px solid rgb(14, 122, 81); 
+                background-color: black;
+                color: whitesmoke;
+                margin: 8px;
+                border-radius: 10px;
+            }
+            fieldset{
+           border-color: rgb(63, 4, 90);
+           width: 50%;
+           margin-left: 200px;
+          
+           background-color: darkslategrey;
+           border-radius: 10px;
+
+          }
+          legend{
+              font-size: x-large;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              font-style: italic;
+              color: rgb(245, 102, 7);
+              padding-top: 40px;
+              text-align: center;
+          }
+        </style>
+    </head>
+    <body>
+        <center>
+        <fieldset>
+            <legend> CALCULATER</legend>
+             <input type="text" name="" id="" placeholder="enter your number" value=""><br><br>
+             <input type="text" name="" id="" placeholder="enter your number" value=""><br><br>
+             <button id="add">+</button>
+             <button id="sub">-</button><br>
+             <button id="mul">*</button>
+             <button id="div">/</button><br>
+             <button id="sqr">**</button>
+             <button id="clear">c</button>
+ 
+              <h1> resulit value will be here....</h1>
+    
+    </fieldset>
+</center>
+    <script>
+     document.getElementById('add').addEventListener("click",add_fun)
+     function add_fun()
+     {
+         
+       var f_num=document.getElementsByTagName('input')[0].value
+       var s_num=document.getElementsByTagName('input')[1].value
+        var result=parseInt(f_num)+parseInt(s_num)
+        
+        document.getElementsByTagName("h1")[0].innerHTML="result is here..."+result
+        // document.getElementsByTagName('input')[0].value=""
+        // document.getElementsByTagName('input')[1].value=""
+       
+     }
+     document.getElementById('sub').addEventListener("click",sub_fun)
+     function sub_fun()
+     {
+         
+       var f_num=document.getElementsByTagName('input')[0].value
+       var s_num=document.getElementsByTagName('input')[1].value
+        var result=parseInt(f_num)-parseInt(s_num)
+        
+        document.getElementsByTagName("h1")[0].innerHTML="result is here..."+result
+        // document.getElementsByTagName('input')[0].value=""
+        // document.getElementsByTagName('input')[1].value=""
+
+     }
+     document.getElementById('mul').addEventListener("click",mul_fun)
+     function mul_fun()
+     {
+         
+       var f_num=document.getElementsByTagName('input')[0].value
+       var s_num=document.getElementsByTagName('input')[1].value
+        var result=parseInt(f_num)*parseInt(s_num)
+        
+        document.getElementsByTagName("h1")[0].innerHTML="result is here..."+result
+        // document.getElementsByTagName('input')[0].value=""
+        // document.getElementsByTagName('input')[1].value=""
+
+     }
+     document.getElementById('div').addEventListener("click",div_fun)
+     function div_fun()
+     {
+         
+       var f_num=document.getElementsByTagName('input')[0].value
+       var s_num=document.getElementsByTagName('input')[1].value
+        var result=parseInt(f_num)/parseInt(s_num)
+        
+        document.getElementsByTagName("h1")[0].innerHTML="result is here..."+result
+        // document.getElementsByTagName('input')[0].value=""
+        // document.getElementsByTagName('input')[1].value=""
+
+     }
+     document.getElementById('sqr').addEventListener("click",sqr_fun)
+     function sqr_fun()
+     {
+         
+       var f_num=document.getElementsByTagName('input')[0].value
+       var s_num=document.getElementsByTagName('input')[1].value
+        var result=parseInt(f_num)**parseInt(s_num)
+        
+        document.getElementsByTagName("h1")[0].innerHTML="result is here..."+result
+        // document.getElementsByTagName('input')[0].value=""
+        // document.getElementsByTagName('input')[1].value=""
+
+     }
+     document.getElementById('clear').addEventListener("click",clear)
+     function clear()
+     {
+       document.getElementsByTagName('input')[0].value=""
+        document.getElementsByTagName('input')[1].value=""
+     }
+
+    </script>
+
+
+
+    </body>
+</html>
