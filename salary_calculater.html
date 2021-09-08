@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>
+            salary calculater
+        </title>
+    </head>
+            <style>
+            fieldset{
+                width: 30%;height: 350px;
+                padding: 30px;
+                color: rgb(246, 28, 8);
+                border: 5px solid gold;
+                border-radius: 5px;
+                background-color: lightgrey;
+            }
+            input{
+                width: 80%;height: 40px;
+                border: 3px solid orange;
+                background-color: lightgreen;
+                text-align: center;
+                border-radius: 5px;
+            }
+            button{
+                width: 40%;height: 40px;
+                background-color: palegreen;
+                border-radius: 5px;
+            }
+            legend{
+                padding-top: 25px;
+            }
+
+
+            </style>
+    
+    <body>
+        <center>
+            
+        <fieldset>
+               <legend>SALARY_CALCULATER</legend>
+               <input type="text" name="" placeholder="enter your salary"><br><br><br>
+               <input type="text" name="" placeholder="bonus"><br><br><br>
+               <input type="text" name="" placeholder="cuttings"><br><br>
+               
+
+               <button>calculate salary</button><br><br>
+               <input type="text" name="" placeholder="final salary:" ><br><br>
+               
+
+
+        </fieldset>
+        </center>
+    
+      <script>
+
+          document.getElementsByTagName("button")[0].addEventListener("click",btn_click)
+          function btn_click()
+         {
+             var b_sal=document.getElementsByTagName('input')[0].value
+             var bns=document.getElementsByTagName('input')[1].value
+             var cuttings=document.getElementsByTagName('input')[2].value
+             var f_sal=parseInt(b_sal)+parseInt(bns)-parseInt(cuttings)
+             document.getElementsByTagName('input')[3].value="final salary is ..."+f_sal
+            
+         }
+             
+         
+    
+
+            
+
+            </script>
+
+    </body>
+</html>
