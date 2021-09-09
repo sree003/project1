@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            js to json convertion
+        </title>
+    </head>
+    <body>
+        
+        <script> 
+              document.write("<center><h2>js to json</h2></center>")
+         jsobj={"empname":"srikanth","empqual":"btech","empsal":50000}
+         document.write(jsobj)
+         console.log(jsobj)
+         jsonobj=JSON.stringify(jsobj)
+          document.write(jsonobj)
+          document.write("<hr>")
+          jsarray=[{"empname":"srikanth","empqual":"btech","empsal":50000},
+          {"empname":"sreekanth","empqual":"mtech","empsal":500000},
+          {"empname":"shrikanth","empqual":"biotech","empsal":150000}]
+        document.write(jsarray)
+        jsonarray=JSON.stringify(jsarray)
+        document.write(jsonarray)
+        document.write("<hr>")
+        document.write("<hr>")
+
+
+        document.write("<center><h2>json to js</h2></center>")
+        jsonobj='{"empname":"srikanth","empqual":"btech","empsal":50000}'
+        document.write(jsonobj)
+        jsobj=JSON.parse(jsonobj)
+        document.write(jsobj)
+        document.write("<Br>")
+       jsonarray='["srikanth","dumpala",1000001,null,{"empname":"srikanth","empqual":"btech","empsal":50000}]'
+       document.write(jsonarray)
+       jsarray=JSON.parse(jsonarray)
+       document.write(jsarray)
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
