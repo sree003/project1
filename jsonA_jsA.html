@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            jsonarray to jsarray
+        </title>
+    </head>
+    <body>
+        <script>
+  jsonarray='[{"sno":111,"sname":"AAA","fname":"aaa","mname":"aba"},{"sno":222,"sname":"BBB","fname":"bbb","mname":"aba"},{"sno":333,"sname":"CCC","fname":"ccc","mname":"aca"},{"sno":444,"sname":"DDD","fname":"ddd","mname":"ada"},{"sno":555,"sname":"EEEE","fname":"eee","mname":"aae"}]'
+  document.write(jsonarray)
+  jsarray=JSON.parse(jsonarray)
+  document.write(jsarray)
+  document.write(jsarray.length)
+  
+
+document.write("<table border=2px width=100%><tr><th>sno</th><th>sname</th><th>fname</th><th>mname</th></tr></table>")
+  for(var i=0;i<jsarray.length;i++)
+
+  {
+    //   document.write("<ul><li>"+jsarray[i].sno+"</li>"+jsarray[i].sname+"<br>"+jsarray[i].fname+"<br>"+jsarray[i].mname+"</ul>")
+      document.write("<table border=2px width=100% ><tr><td width=15.5% align=center>"+jsarray[i].sno+"</td><td width=27% align=center>"+jsarray[i].sname+"</td><td width=26.5% align=center>"+jsarray[i].fname+"</td><td align=center>"+jsarray[i].mname+"</td></table>")
+  }
+  
+</script>
+    </body>
+</html>
