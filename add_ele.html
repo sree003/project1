@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            add and remove elements
+        </title>
+    </head>
+    <body>
+        <div id="div1"></div>
+        <div>
+            <p>hello</p>
+            <p id="p2">world</p>
+            <p>full stack web</p>
+        </div>
+        <input type="button" name="" id="btn1" value="add para to div">
+        <input type="button" name="" id="btn2" value="remove para ">
+        <script>
+            document.getElementById("btn1").addEventListener("click",add)
+            document.getElementById("btn2").addEventListener("click",add)
+
+            function add()
+            {
+                var mypara=document.createElement("h1");
+                mypara.innerHTML="WELCOME TO THE WORLD"
+                document.getElementById("div1").appendChild(mypara).style.color="red"
+                document.getElementById("p2").remove();
+            }
+        </script>
+
+    </body>
+</html>

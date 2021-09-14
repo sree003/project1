@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            set attributes
+        </title>
+    </head>
+    <body>
+        <h1 class="one">full stack web development</h1>
+        <button>removeAttribute attribute</button>
+        <script>
+            document.getElementsByTagName("button")[0].addEventListener("click",fun)
+            function fun()
+            {
+            document.getElementsByTagName('h1')[0].removeAttribute("title","headding is here")
+            document.getElementsByTagName('h1')[0].removeAttribute("class","one")
+            }
+        </script>
+        <style>
+            .one{
+                background-color:rgb(233, 210, 7);
+                color: rgb(12, 161, 161);
+            }
+        </style>
+        
+    </body>
+</html>

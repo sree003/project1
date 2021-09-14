@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            get element
+        </title>
+    </head>
+    <body>
+        <h1 class="one" title="hello world"> full stack web development</h1>
+        <button>get attribute</button>
+        <script>
+            document.getElementsByTagName("button")[0].addEventListener("click",clk)
+            function clk()
+            {
+               var a= document.getElementsByTagName("h1")[0].getAttribute("title")
+                alert(a)
+            }
+        </script>
+
+    </body>
+</html>
